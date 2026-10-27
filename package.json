@@ -1,0 +1,18 @@
+{
+  "name": "milunzo-rtc-lab-server",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/index.mjs",
+    "test": "node --test",
+    "check-config": "node --env-file-if-exists=.env src/index.mjs --check-config"
+  },
+  "dependencies": {
+    "@voltkit-rtc/server": "0.4.8",
+    "express": "5.3.0"
+  },
+  "main": "src/index.mjs"
+}
